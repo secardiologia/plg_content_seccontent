@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="content" method="upgrade">
+    <name>Content - SEC Content</name>
+    <author>Sociedad Española de Cardiología</author>
+    <creationDate>May 2018</creationDate>
+	<copyright>Copyright (C) 2018 Sociedad Española de Cardiología. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>siglesias@secardioglogia.es</authorEmail>
+    <version>1.0.0</version>
+    <description>SEC Content - Free plugin for Joomla by secardiologia.es</description>
+    <files>
+        <filename plugin="seccontent">seccontent.php</filename>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.plg_content_seccontent.ini</language>
+        <language tag="en-GB">en-GB.plg_content_seccontent.sys.ini</language>
+        <language tag="es-ES">es-ES.plg_content_seccontent.ini</language>
+        <language tag="es-ES">es-ES.plg_content_seccontent.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">			
+				<field name="catids" type="category" extension="com_content" multiple="true" size="10" default="all" label="PLG_SECCONTENT_CATEGORIES_LABEL" description="PLG_SECCONTENT_CATEGORIES_DESC" />
+				<field name="position" type="list" default="2" label="PLG_SECCONTENT_POSITION_LABEL" description="PLG_SECCONTENT_POSITION_DESC">
+					<option value="1">PLG_SECCONTENT_POSITION_OPTION_1</option>
+					<option value="2">PLG_SECCONTENT_POSITION_OPTION_2</option>
+					<option value="3">PLG_SECCONTENT_POSITION_OPTION_3</option>
+				</field>
+                <field name="custom" type="editor" label="PLG_SECCONTENT_CUSTOM_LABEL" description="PLG_SECCONTENT_CUSTOM_DESC" width="300" filter="safehtml" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
