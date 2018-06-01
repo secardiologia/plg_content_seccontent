@@ -30,4 +30,7 @@
             </fieldset>
         </fields>
     </config>
+    <updateservers>
+		<server type="extension" name="Content - SEC Content">https://secardiologia.github.io/seccontent.xml</server>
+    </updateservers>
 </extension>
